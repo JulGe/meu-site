@@ -1,5 +1,5 @@
 (() => {
-    const percentages = [40, 20, 30, 40, 50];
+    const percentages = [90, 50, 40, 30, 20];
 
     const $progressBars = document.querySelectorAll('.progress-bar > .progress');
     console.log($progressBars);
