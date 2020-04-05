@@ -1,0 +1,193 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e7e5e8;
+}
+
+.background-image {
+    background: url(./src/header.png) 50% 50% repeat;
+    width: auto;
+    height: 371px;
+}
+
+.inside-page {
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px;
+    padding-top: 0;
+    align-items: center;
+    box-shadow: 0px 20px 20px 1px rgb(119, 119, 119);
+    background-color: #e7e5e8;
+    border-radius: 8px;
+}
+
+.profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #e7e5e8;
+    border-radius: 50%;
+    /*box-shadow: 0px 0px 0px 4px #e7e5e8;*/
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    top: -75px;
+}
+
+.name {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+
+.subtitle {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+section {
+    margin: 8px 0;
+}
+
+li,
+h3,
+p {
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+h4, a {
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+h5 {
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.contact-content {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 26px 3fr;
+    grid-template-rows: auto auto;
+    margin-left: 8px;
+}
+
+.contact-text {
+    line-height: 24px;
+}
+
+.contact-icon {
+    width: 16px;
+    margin: 4px 0;
+    margin-right: 8px;
+}
+
+.inside-text {
+    font-family: 'Cabin', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: auto auto auto;
+    background-color: transparent;
+}
+
+.content>.section {
+    border: 0px solid rgb(214, 214, 214);
+    margin: 0;
+    padding: 8px;
+}
+
+.content>.section>.header {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.content>.section>.header>.icon {
+    width: 18px;
+    margin-right: 8px;
+}
+
+.content-border {
+    border-left: 1px solid darkcyan;
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
+.progress-grid {
+    display: grid;
+
+    margin-left: 16px;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+}
+
+.progress-grid>.progress-bar {
+    align-self: center;
+    height: 12px;
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+}
+
+.progress-grid>.progress-bar>.progress {
+    --percentage: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: darkcyan;
+    transition: width ease-out 1s;
+    width: var(--percentage);
+}
+
+@media only screen and (max-width: 720px) {
+    .content {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        background-color: transparent;
+    }
+
+    .contact {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    .inside-page {
+        padding: 20px;
+        width: 85%;
+        top: -300px;
+    }
+    
+}
