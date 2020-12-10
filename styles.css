@@ -153,8 +153,9 @@ a:visited {
 .inside-text {
     font-family: 'Cabin', Arial, Helvetica, sans-serif;
     font-size: 14px;
-    text-align: left;
-    line-height: 1.6;
+    text-align: justify;
+    hyphens: manual;
+    line-height: 1.6em;
     padding-bottom: 32px;
     color: #453B34;
 }
